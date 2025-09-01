@@ -1,0 +1,21 @@
+name: meu primeiro workflow
+
+on:
+
+  push:
+    branches:
+      [ "main" ]
+    
+    workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Boas-vindas
+        run: echo "Salve salve"
+      - name: Mostra um
+        run: pwd
+      - name: Mostra tudo
+        run: ls -a
