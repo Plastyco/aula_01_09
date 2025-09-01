@@ -5,7 +5,7 @@ name: 01 - Nosso Primeiro Workflow
 on:
   # Executa em todo push para a branch 'main'
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   
   # Permite que o workflow seja executado manualmente a partir da interface do GitHub
   workflow_dispatch:
