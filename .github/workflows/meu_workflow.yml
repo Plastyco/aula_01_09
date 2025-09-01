@@ -3,7 +3,8 @@ name: meu workflow
 on:
 
   push:
-    branches: 
+
+    branches-ignore:
       - master
 
     paths:
@@ -22,7 +23,7 @@ jobs:
         run: echo "salve salve"
       - name: Mostra o diretório de trabalho
         run: pwd
-      - name: Lista os arquivos no diretório home
+      - name: Lista os arquivos no diretório homea
         run: ls ~ -a
       - name: Mostra o repo
         run: echo "Este joba ta no repositório ${{ github.repository }}"
